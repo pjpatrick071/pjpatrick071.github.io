@@ -195,16 +195,11 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container">
+        <div class="container">
         <section class="contact-form">
-            <h2 class="form-title">Contact Us</h2>
-            
-            <!-- Form status message -->
-            <div id="formMessage" class="form-message"></div>
-            
-            <form id="contactForm">
-                <input type="hidden" name="_subject" value="New message from PJ's Postings">
-                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Optional thank you page -->
+            <h2 class="form-title">Get In Touch</h2>
+            <form id="contactForm" action="https://formspree.io/f/xdkewgrl" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="New submission from PJ's Postings">
                 
                 <div class="form-group">
                     <label for="name">Your Name:</label>
@@ -221,10 +216,6 @@
                     <textarea id="message" name="message" required></textarea>
                 </div>
                 
-                <div class="form-group">
-                    <label for="upload">Attachment (optional, max 10MB):</label>
-                    <input type="file" id="upload" name="file">
-                </div>
                 
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
@@ -238,59 +229,14 @@
     <!-- JavaScript for dynamic elements -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            const formMessage = document.getElementById('formMessage');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Change button to loading state
-                const submitBtn = form.querySelector('button[type="submit"]');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-                
-                // Submit form data using Fetch API
-                fetch('https://formspree.io/f/xdkewgrl', {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        // Show success message
-                        formMessage.textContent = 'Message sent successfully!';
-                        formMessage.className = 'form-message form-success';
-                        formMessage.style.display = 'block';
-                        
-                        // Reset form
-                        form.reset();
-                    } else {
-                        throw new Error('Form submission failed');
-                    }
-                })
-                .catch(error => {
-                    // Show error message
-                    formMessage.textContent = 'There was a problem sending your message. Please try again later.';
-                    formMessage.className = 'form-message form-error';
-                    formMessage.style.display = 'block';
-                    console.error('Error:', error);
-                })
-                .finally(() => {
-                    // Reset button state
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
-                    
-                    // Scroll to show message
-                    formMessage.scrollIntoView({ behavior: 'smooth' });
-                    
-                    // Hide message after 5 seconds
-                    setTimeout(() => {
-                        formMessage.style.display = 'none';
-                    }, 5000);
+            // Form submission feedback
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // You can add form validation or submission feedback here
+                    console.log('Form submitted');
                 });
-            });
+            }
         });
     </script>
 </body>
