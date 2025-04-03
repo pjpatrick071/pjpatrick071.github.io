@@ -214,57 +214,17 @@
         <p>&copy; <script>document.write(new Date().getFullYear());</script> PJ's Postings. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript for dynamic elements -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            const fileInput = document.getElementById('upload');
-            const fileFeedback = document.getElementById('fileFeedback');
-            
-            // Check file size before submission
-            fileInput.addEventListener('change', function() {
-                if(this.files[0].size > 10 * 1024 * 1024) { // 10MB
-                    fileFeedback.textContent = 'File size exceeds 10MB limit';
-                    fileFeedback.style.display = 'block';
-                    this.value = ''; // Clear the file input
-                } else {
-                    fileFeedback.style.display = 'none';
-                }
-            });
-            
-            // Handle form submission
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Show loading state
-                const submitBtn = form.querySelector('button[type="submit"]');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-                
-                // Submit form via Fetch API
-                fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        alert('Message sent successfully!');
-                        form.reset();
-                    } else {
-                        throw new Error('Network response was not ok');
-                    }
-                })
-                .catch(error => {
-                    alert('There was a problem sending your message. Please try again later.');
-                    console.error('Error:', error);
-                })
-                .finally(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send Message';
+            // Form submission feedback
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // You can add form validation or submission feedback here
+                    console.log('Form submitted');
                 });
-            });
+            }
         });
     </script>
 </body>
