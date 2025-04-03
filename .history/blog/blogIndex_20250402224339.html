@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Index - PJ's Postings</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts-api.wp.com/css?family=Playfair+Display:400,400i,700,700i|Open+Sans:400,400i,700,700i&subset=latin,latin-ext" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <style>
+        :root {
+            --soft-green: #94c0a4;
+            --silver: #b3b3b3;
+            --black: #000000;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--black);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--soft-green);
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--silver);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: var(--black);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Navigation */
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--silver);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        /* Blog Index */
+        .blog-index {
+            background-color: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        
+        .index-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .index-header h1 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+        }
+        
+        .index-section {
+            margin-bottom: 3rem;
+        }
+        
+        .index-section h2 {
+            font-family: 'Playfair Display', serif;
+            border-bottom: 2px solid var(--soft-green);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .index-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .index-list li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .index-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .index-list a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .index-list a:hover {
+            color: var(--soft-green);
+        }
+        
+        .requested-badge {
+            background-color: var(--soft-green);
+            color: var(--black);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+            font-weight: bold;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .sidebar-title {
+            margin-top: 0;
+            color: var(--black);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--soft-green);
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid var(--silver);
+            margin-top: 2rem;
+        }
+        
+        /* Social Icons */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: var(--black);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .content-wrapper {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="logo">PJ's Postings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog Index</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@p.j.patrick" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Blog Index -->
+            <main class="blog-index">
+                <div class="index-header">
+                    <h1>Blog Index</h1>
+                    <p>All posts organized by category. Reviews marked with <span class="requested-badge">Requested Review</span> indicate that the author contacted me directly and provided me with a free copy of their book in exchange for an honest review.</p>
+                </div>
+                
+                <section id="book-reviews" class="index-section">
+                    <h2>Book Reviews</h2>
+                    <ul class="index-list">
+                        <li>
+                            <a href="#test-post">Test Post</a>
+                            <span class="requested-badge">Requested Review</span>
+                        </li>
+                        <li>
+                            <a href="#coming-soon">Coming Soon</a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section id="life-updates" class="index-section">
+                    <h2>Life Updates</h2>
+                    <ul class="index-list">
+                        <li>
+                            <a href="#my-summer-adventure">My Summer Adventure</a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section id="writing" class="index-section">
+                    <h2>Writing</h2>
+                    <ul class="index-list">
+                        <li>
+                            <a href="#short-story-collection">Short Story Collection</a>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Categories</h3>
+                <ul>
+                    <li><a href="#book-reviews">Book Reviews</a></li>
+                    <li><a href="#life-updates">Life Updates</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                </ul>
+                
+                <h3 class="sidebar-title">Recent Posts</h3>
+                <ul>
+                    <li><a href="#test-post">Test Post</a></li>
+                    <li><a href="#coming-soon">Coming Soon</a></li>
+                </ul>
+                
+                <!-- Email Subscription Form -->
+                <h3 class="sidebar-title">Subscribe</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email address" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+                    <button type="submit" style="background: var(--soft-green); border: none; padding: 8px 16px; cursor: pointer;">Subscribe</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> PJ's Postings. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for dynamic elements -->
+    <script>
+        // Simple script to handle mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            // You can add interactive functionality here
+            console.log('Blog index loaded successfully!');
+        });
+    </script>
+</body>
+</html>
