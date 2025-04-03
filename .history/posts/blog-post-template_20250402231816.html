@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST TITLE | PJ's Postings</title>
+    <!-- Use the same stylesheet links as your blog.html -->
+    <link href="https://fonts-api.wp.com/css?family=Playfair+Display:400,400i,700,700i|Open+Sans:400,400i,700,700i&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Copy all the CSS from blog.html here */
+        /* Add this additional style for post content */
+        .post-content {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header as blog.html -->
+    <header>
+        <h1 class="logo">PJ's Postings</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog Index</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@p.j.patrick" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <article class="blog-post">
+            <h1 class="post-title">POST TITLE</h1>
+            <p class="post-meta">Posted on <span id="post-date">Month Day, Year</span></p>
+            
+            <div class="post-content">
+                <!-- Post content will go here -->
+                <p>This is where your blog post content will appear.</p>
+                
+                <!-- Example content block: -->
+                <h2>Section Header</h2>
+                <p>Paragraph text goes here. You can add as many paragraphs as needed.</p>
+                
+                <!-- Example image -->
+                <img src="placeholder.jpg" alt="Descriptive alt text">
+            </div>
+            
+            <div class="post-navigation">
+                <a href="blog.html" class="back-to-blog">&larr; Back to Blog Index</a>
+            </div>
+        </article>
+    </div>
+
+    <!-- Same footer as blog.html -->
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> PJ's Postings. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Auto-set the current date
+        document.getElementById('post-date').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+    </script>
+</body>
+</html>

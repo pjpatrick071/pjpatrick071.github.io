@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Updates | PJ's Postings</title>
+        <link href="https://fonts-api.wp.com/css?family=Playfair+Display:400,400i,700,700i|Open+Sans:400,400i,700,700i&subset=latin,latin-ext" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <style>
+            :root {
+                --soft-green: #94c0a4;
+                --silver: #b3b3b3;
+                --black: #000000;
+                --white: #ffffff;
+            }
+            
+            body {
+                font-family: 'Open Sans', sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: var(--white);
+                color: var(--black);
+            }
+            
+            /* Header Styles */
+            header {
+                background-color: var(--soft-green);
+                padding: 1rem 0;
+                text-align: center;
+                border-bottom: 1px solid var(--silver);
+            }
+            
+            .logo {
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 0;
+                color: var(--black);
+                font-family: 'Playfair Display', serif;
+            }
+            
+            /* Navigation */
+            nav ul {
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: var(--black);
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+            
+            nav a:hover {
+                color: var(--silver);
+            }
+            
+            /* Main Content */
+            .container {
+                max-width: 1200px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            
+            /* Blog Index */
+            .blog-index {
+                background-color: var(--white);
+                border: 1px solid var(--silver);
+                border-radius: 8px;
+                padding: 2rem;
+            }
+            
+            .index-header {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            .index-header h1 {
+                font-family: 'Playfair Display', serif;
+                margin-top: 0;
+            }
+            
+            .index-section {
+                margin-bottom: 3rem;
+            }
+            
+            .index-section h2 {
+                font-family: 'Playfair Display', serif;
+                border-bottom: 2px solid var(--soft-green);
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .index-list {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .index-list li {
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .index-list li:last-child {
+                border-bottom: none;
+            }
+            
+            .index-list a {
+                text-decoration: none;
+                color: var(--black);
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+            
+            .index-list a:hover {
+                color: var(--soft-green);
+            }
+            
+            .requested-badge {
+                background-color: var(--soft-green);
+                color: var(--black);
+                padding: 0.2rem 0.5rem;
+                border-radius: 4px;
+                font-size: 0.8rem;
+                margin-left: 0.5rem;
+                font-weight: bold;
+            }
+            
+            /* Sidebar */
+            .sidebar {
+                background-color: var(--white);
+                border: 1px solid var(--silver);
+                border-radius: 8px;
+                padding: 1.5rem;
+                margin-top: 2rem;
+            }
+            
+            .sidebar-title {
+                margin-top: 0;
+                color: var(--black);
+                font-family: 'Playfair Display', serif;
+            }
+            
+            /* Footer */
+            footer {
+                background-color: var(--soft-green);
+                text-align: center;
+                padding: 1rem 0;
+                border-top: 1px solid var(--silver);
+                margin-top: 2rem;
+            }
+            
+            /* Social Icons */
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin: 1rem 0;
+            }
+            
+            .social-links a {
+                color: var(--black);
+                font-size: 1.5rem;
+                transition: transform 0.3s;
+            }
+            
+            .social-links a:hover {
+                transform: scale(1.2);
+            }
+            
+            /* Responsive Design */
+            @media (min-width: 768px) {
+                .content-wrapper {
+                    display: grid;
+                    grid-template-columns: 2fr 1fr;
+                    gap: 2rem;
+                }
+                
+                .sidebar {
+                    margin-top: 0;
+                }
+            }
+            body {
+                font-family: 'Open Sans', sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                color: black;
+            }
+            .container {
+                max-width: 800px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+            .blog-post {
+                background-color: white;
+                border: 1px solid #b3b3b3;
+                border-radius: 8px;
+                padding: 2rem;
+            }
+            .post-title {
+                font-family: 'Playfair Display', serif;
+                margin-top: 0;
+            }
+            .post-content {
+                line-height: 1.8;
+            }
+            .post-content img {
+                max-width: 100%;
+                height: auto;
+                margin: 1rem 0;
+            }
+            .back-to-blog {
+                display: inline-block;
+                margin-top: 2rem;
+                color: #94c0a4;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+<body>
+    <!-- Same header as snail-trail.html -->
+
+    <div class="container">
+        <article class="blog-post">
+            <h1 class="post-title">Website Refresh Coming Soon</h1>
+            <p class="post-meta">Posted on March 15, 2024</p>
+            
+            <div class="post-content">
+                <p>PJ's Postings is getting a makeover! Here's what to expect in the coming weeks:</p>
+                
+                <h2>New Features</h2>
+                <ul>
+                    <li>Dark mode option for night readers</li>
+                    <li>Improved search functionality</li>
+                    <li>Book review rating system (with content warnings)</li>
+                    <li>Dedicated author interview section</li>
+                </ul>
+                
+                <h2>Design Changes</h2>
+                <p>The overall layout will remain familiar but with better spacing, more readable fonts, and a more cohesive color scheme. I'm particularly excited about the new custom illustrations being created!</p>
+                
+                <h2>Timeline</h2>
+                <p>The update will roll out in phases starting April 15th, with the full transition complete by May 1st. Some pages might look odd during the transition - bear with me!</p>
+            </div>
+            
+            <a href="../blog.html" class="back-to-blog">&larr; Back to Blog Index</a>
+        </article>
+    </div>
+
+    <!-- Same footer as snail-trail.html -->
+</body>
+</html>

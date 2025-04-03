@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New TikTok Content | PJ's Postings</title>
+    <!-- All the same CSS as snail-trail.html -->
+    <style>
+        :root {
+            --soft-green: #94c0a4;
+            --silver: #b3b3b3;
+            --black: #000000;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--black);
+        }
+        header {
+            background-color: var(--soft-green);
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--silver);
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: var(--black);
+            font-family: 'Playfair Display', serif;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--silver);
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .blog-post {
+            background-color: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .post-title {
+            color: var(--black);
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        .post-meta {
+            color: var(--silver);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .post-content {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+        .back-to-blog {
+            display: inline-block;
+            background-color: var(--soft-green);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-to-blog:hover {
+            background-color: #82ad90;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .social-links a {
+            color: var(--black);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: var(--soft-green);
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid var(--silver);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">PJ's Postings</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog.html">Blog Index</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@p.j.patrick" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <article class="blog-post">
+            <h1 class="post-title">New TikTok Content Coming April 1st</h1>
+            <p class="post-meta">Posted on March 28, 2024</p>
+            
+            <div class="post-content">
+                <p>Big changes are coming to my TikTok channel next month!</p>
+                
+                <h2>What's New</h2>
+                <p>Starting April 1st, I'll be launching a weekly series called "60-Second Reviews" where I break down books in short, digestible videos. The twist? Each review will incorporate a different trending audio or format.</p>
+                
+                <h2>Schedule</h2>
+                <p>New videos will drop every Tuesday and Friday at 5pm EST. The first month will focus on fantasy novels, with subsequent months exploring different genres based on audience polls.</p>
+                
+                <h2>Behind the Scenes</h2>
+                <p>I'll also be sharing occasional "Bookstagram vs. Reality" clips showing my messy writing process and the chaotic reality behind curated book photos.</p>
+            </div>
+            
+            <a href="../blog.html" class="back-to-blog">&larr; Back to Blog Index</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> PJ's Postings. All rights reserved.</p>
+    </footer>
+</body>
+</html>
