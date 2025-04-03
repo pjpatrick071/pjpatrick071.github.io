@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoReads | Green Blog</title>
+    <style>
+        /* Color Variables */
+        :root {
+            --soft-green: #c4ffd3;
+            --silver: #b3b3b3;
+            --black: #000000;
+            --white: #ffffff;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--soft-green);
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--silver);
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: var(--black);
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--silver);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Blog Posts */
+        .blog-post {
+            background-color: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .post-title {
+            color: var(--black);
+            margin-top: 0;
+        }
+
+        .post-meta {
+            color: var(--silver);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: var(--soft-green);
+            color: var(--black);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .read-more:hover {
+            opacity: 0.8;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .sidebar-title {
+            margin-top: 0;
+            color: var(--black);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar a {
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: var(--silver);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--soft-green);
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 1px solid var(--silver);
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="logo">EcoReads</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Blog Posts Section -->
+        <main>
+            <article class="blog-post">
+                <h2 class="post-title">10 Tips for Sustainable Living</h2>
+                <p class="post-meta">Posted on May 15, 2024 by <a href="#">Admin</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2 class="post-title">The Future of Renewable Energy</h2>
+                <p class="post-meta">Posted on May 10, 2024 by <a href="#">Admin</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula...</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Categories</h3>
+            <ul>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Green Tech</a></li>
+                <li><a href="#">Eco-Friendly Living</a></li>
+                <li><a href="#">Climate Change</a></li>
+            </ul>
+
+            <h3 class="sidebar-title">Popular Posts</h3>
+            <ul>
+                <li><a href="#">How to Reduce Your Carbon Footprint</a></li>
+                <li><a href="#">Best Indoor Plants for Clean Air</a></li>
+                <li><a href="#">Zero Waste Kitchen Tips</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EcoReads. All rights reserved.</p>
+    </footer>
+</body>
+</html>
