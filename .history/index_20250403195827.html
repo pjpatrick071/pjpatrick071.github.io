@@ -314,12 +314,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // List of all your blog posts in reverse chronological order
-            fetch('posts.json')
-                    .then(response => response.json())
-                    .then(data => {
-                    const allPosts = data.posts;
-                    // Rest of your existing code
-                     });
+        
         
             // Sort posts by date (newest first)
             allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));

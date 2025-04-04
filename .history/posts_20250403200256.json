@@ -1,0 +1,41 @@
+
+{
+  "posts": [{
+    "title": "New TikTok Content Coming April 1st",
+    "date": "2024-03-28",
+    "url": "posts/new-tiktok.html",
+    "excerpt": "Exciting new content coming to my TikTok channel!"
+},
+{
+    "title": "ACOTAR Review: Overhyped and Underwhelming",
+    "date": "2024-03-25",
+    "url": "posts/acotar-review.html",
+    "excerpt": "A critical look at Sarah J. Maas's popular fantasy series."
+},
+{
+    "title": "Alternate Universes",
+    "date"": "2024-03-15",
+    "url": "posts/alternate-universes.html",
+    "excerpt": "The concept of alternate universes in fiction and how writers can use them effectively."
+},
+{
+    "title": "Website Refresh Coming Soon",
+    "date": "2024-03-15",
+    "url": "posts/website-up"date"s.html",
+    "excerpt": "Plans for improving PJ's Postings."
+},
+{
+    "title": "LOTR Review: A Timeless Masterpiece",
+    "date": "2024-02-10",
+    "url": "posts/lotr-review.html",
+    "excerpt": "Why Tolkien's epic continues to define the fantasy genre."
+},
+{
+    "title": "Behind the Snail Trail",
+    "date": "2024-04-01",
+    "url": "posts/snail-trail.html",
+    "excerpt": "Exploring the slow but meaningful process of writing."
+}
+
+  ]
+}

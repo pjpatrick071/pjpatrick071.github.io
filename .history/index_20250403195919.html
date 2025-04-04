@@ -314,6 +314,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // List of all your blog posts in reverse chronological order
+            const allPosts = [
+               
+            ];
             fetch('posts.json')
                     .then(response => response.json())
                     .then(data => {
