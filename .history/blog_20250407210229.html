@@ -138,12 +138,6 @@
             font-weight: bold;
         }
         
-        .post-meta {
-            font-size: 0.8rem;
-            color: var(--silver);
-            margin-top: 0.3rem;
-        }
-        
         /* Sidebar */
         .sidebar {
             background-color: var(--white);
@@ -206,7 +200,7 @@
         <h1 class="logo">PJ's Postings</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog Index</a></li>
                 <li><a href="contact">Contact</a></li>
@@ -310,11 +304,7 @@
                 })
                 .catch(error => {
                     console.error('Error loading posts:', error);
-                    // Show error messages in each section
-                    document.getElementById('writing-posts').innerHTML = '<li>Error loading writing posts</li>';
-                    document.getElementById('book-review-posts').innerHTML = '<li>Error loading book reviews</li>';
-                    document.getElementById('content-update-posts').innerHTML = '<li>Error loading content updates</li>';
-                    document.getElementById('recent-posts-sidebar').innerHTML = '<li>Error loading recent posts</li>';
+                    // You could add error messages to each section if desired
                 });
             
             function formatDate(dateString) {
@@ -335,7 +325,9 @@
                     <li>
                         <a href="${post.url}">${post.title}</a>
                         ${post.requested ? '<span class="requested-badge">Requested Review</span>' : ''}
-                        <p class="post-meta">Posted on ${formatDate(post.date)}</p>
+                        <p class="post-meta" style="font-size: 0.8rem; color: var(--silver); margin-top: 0.3rem;">
+                            Posted on ${formatDate(post.date)}
+                        </p>
                     </li>
                 `).join('');
             }
@@ -351,7 +343,9 @@
                 container.innerHTML = recentPosts.map(post => `
                     <li>
                         <a href="${post.url}">${post.title}</a>
-                        <p class="post-meta">${formatDate(post.date)}</p>
+                        <p class="post-meta" style="font-size: 0.8rem; color: var(--silver); margin-top: 0.3rem;">
+                            ${formatDate(post.date)}
+                        </p>
                     </li>
                 `).join('');
             }

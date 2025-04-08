@@ -1,0 +1,4 @@
+add scripts for blog.html
+
+add favicon
+

@@ -1,0 +1,7 @@
+add scripts for blog.html
+
+add favicon
+
+fix-up postings for first post
+
+test tiktok embed feature. 
