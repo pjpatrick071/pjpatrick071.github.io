@@ -356,7 +356,7 @@
                         const postElement = document.createElement('article');
                         postElement.className = 'blog-post';
                         postElement.innerHTML = `
-                            <h2 class="post-title">${post.title} ${post.requested ? '<span class="requested-badge">Requested Review</span>' : ''}</h2>
+                            <h2 class="post-title">${post.title}${post.requested ? '<span class="requested-badge">Requested Review</span>' : ''}</h2>
                             <p class="post-meta">Posted on ${formatDate(post.date)}</p>
                             <div class="entry-content">
                                 <p>${post.excerpt}</p>
