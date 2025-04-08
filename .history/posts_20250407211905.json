@@ -1,0 +1,29 @@
+{
+    "posts": [
+      {
+        "title": "New TikTok Content Coming April 1st",
+        "date": "2024-03-28",
+        "url": "posts/new-tiktok.html",
+        "excerpt": "Exciting new content coming to my TikTok channel!",
+        "category": "content-updates",
+        "requested": false
+      },
+      {
+        "title": "ACOTAR Review: Overhyped and Underwhelming",
+        "date": "2024-03-25",
+        "url": "posts/acotar-review.html",
+        "excerpt": "A critical look at Sarah J. Maas's popular fantasy series.",
+        "category": "book-reviews",
+        "requested": true
+      },
+
+      {
+        "title": "Tester",
+        "date": "2026-01-01",
+        "url": "posts/tester.html",
+        "excerpt": "Exploring the slow but meaningful process of writing.",
+        "category": "writing",
+        "requested": false
+      }
+    ]
+  }
